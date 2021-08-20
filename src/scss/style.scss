@@ -1,0 +1,15 @@
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'reset';
+@use 'base';
+
+@use 'header';
+@use 'footer';
+
+@use 'pages/home';
+@use 'pages/blog-list';
+@use 'pages/blog-detail';
+@use 'pages/team-list';
+@use 'pages/team-detail';
+@use 'pages/company';

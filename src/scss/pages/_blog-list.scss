@@ -1,0 +1,234 @@
+// banner
+.blog_list_banner {
+  width: 100%;
+  background-color: #555354;
+}
+
+.blog_list_banner_wrapper {
+  width: 100%;
+  padding: 7em 1.5rem 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h2.blog_list_banner_title {
+  font-family: GTAmerica;
+  font-size: 26px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: -0.35px;
+  color: #e1e0dc;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.blog_list_filter {
+  width: 50%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.blog_list_filter select {
+  width: 100%;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  font-family: "GTAmerica";
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #fff;
+  padding: 1.875em 0 2em;
+  margin-bottom: 1.25em;
+  background-color: transparent;
+  background-image: url("../img/icon/select-bg.svg");
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 6px - 1.5rem) 50%;
+}
+
+.blog_list_filter select option {
+  color: #1b1b1b;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog_list_banner_wrapper {
+    padding-top: 13.28rem;
+    padding-bottom: 6.78rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  h2.blog_list_banner_title {
+    font-size: 30px;
+    line-height: 5.5rem;
+    letter-spacing: -0.4px;
+    width: 50%;
+    max-width: 650px;
+  }
+  .blog_list_filter {
+    width: 50%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .blog_list_filter select {
+    max-width: 160px;
+    padding: 2em 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+// blog list content
+.blog_list_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #787878;
+  padding-bottom: 5em;
+}
+
+.blog_list {
+  width: calc(100% + 1.75rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -0.875rem;
+}
+
+.blog_list_item {
+  width: 33.33%;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 1px solid #979797;
+  padding-bottom: 6em;
+}
+
+.blog_list_item:nth-child(3n) {
+  border-right: none;
+}
+
+.blog_list_image {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 56.26%;
+  margin-bottom: 2em;
+}
+
+.blog_list_image a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.blog_list_image a img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog_list_desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.blog_list_id {
+  display: flex;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.blog_list_id span {
+  display: flex;
+  display: inline-block;
+  font-family: GTAmerica;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: -0.23px;
+  color: #e4dfd4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.blog_list_id span::after {
+  content: "\A0\2022\A0";
+}
+
+.blog_list_id span:last-child::after {
+  display: none;
+}
+
+.blog_list_id a {
+}
+
+h2.blog_list_title {
+  display: block;
+}
+
+h2.blog_list_title a {
+  display: flex;
+  font-family: GTAmerica;
+  font-size: 26px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: -0.76px;
+  color: #ededed;
+  margin-bottom: 2.25em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.blog_list {
+  padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog_list {
+    padding-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog_list {
+    padding-top: 4em;
+  }
+}
+
+// blog list more button
+.blog_list_more {
+  display: flex;
+  justify-content: center;
+}
+
+.blog_list_more button {
+}
+
+.blog_list_more button:hover {
+}
