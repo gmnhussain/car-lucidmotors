@@ -12,6 +12,7 @@ let js = [
   "./src/js/cursor.js",
   "./src/js/scroller.js",
   "./src/js/button.js",
+  "./src/js/sidenav.js",
   "./src/js/modal.js",
   "./src/js/slider-hero.js",
 ];
