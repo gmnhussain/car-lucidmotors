@@ -36,14 +36,14 @@ body {
   display: block;
   width: 100%;
   padding: 0 1.5rem;
-  max-width: 480px;
+  // max-width: 480px;
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 960px;
-  }
-}
+// @media only screen and (min-width: 768px) {
+//   .container {
+//     max-width: 960px;
+//   }
+// }
 
 @media only screen and (min-width: 992px) {
   .container {
@@ -114,8 +114,8 @@ body {
   letter-spacing: -0.2px;
   text-align: center;
   width: 100%;
-  margin-top: 3em;
-  padding: 1.125em 2.75em 1.25em;
+  margin-top: 3rem;
+  padding: 1.125rem 2.3125rem 1.25rem;
   border-radius: 2px;
   transition: all 0.5s cubic-bezier(0.6, 0.2, 0.15, 0.95);
   background-color: transparent;

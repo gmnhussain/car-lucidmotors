@@ -1,18 +1,18 @@
-// banner
+// team list banner
 .team_list_banner {
   width: 100%;
   background-color: #1b1b1b;
 }
-
 .team_list_banner_wrapper {
   width: 100%;
-  padding: 7em 1.5rem 1em;
+  padding-top: 9.11em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
 }
-
 h2.team_list_banner_title {
   font-family: GTAmerica;
   font-size: 26px;
@@ -21,24 +21,14 @@ h2.team_list_banner_title {
   font-style: normal;
   line-height: 1.31;
   letter-spacing: -0.35px;
-  color: #e1e0dc;
+  color: #c2b298;
   margin-bottom: 0;
   width: 100%;
-  padding: 0 1.5rem;
-
-  width: 100%;
-  max-width: 1300px;
-  font-family: GTAmerica;
-  font-size: 26px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.31;
-  letter-spacing: -0.35px;
-  color: #c2b298;
+  padding: 0;
+  padding-bottom: 48px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .team_list_banner_wrapper {
     padding-top: 13.28rem;
     padding-bottom: 6.78rem;
@@ -50,8 +40,7 @@ h2.team_list_banner_title {
     font-size: 30px;
     line-height: 5.5rem;
     letter-spacing: -0.4px;
-    width: 50%;
-    max-width: 650px;
+    padding-bottom: 0;
   }
 }
 
@@ -61,45 +50,46 @@ h2.team_list_banner_title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #787878;
-  padding-bottom: 5em;
+  background-color: #141414;
+}
+
+.team_list_wrapper {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .team_list {
-  width: calc(100% + 1.75rem);
+  width: calc(100% + 2rem);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 -0.875rem;
-  max-width: calc(1300px - 0.75rem);
-  margin: 0 auto;
+  margin: 0 -1rem;
+  padding-top: 1.5rem;
 }
 
 .team_list_item {
-  width: 33.33%;
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 4em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 6em;
+  max-width: 444px;
 }
-
-.team_list_item:nth-child(3n) {
-  border-right: none;
-}
-
 .team_list_image {
   display: block;
   width: 100%;
   position: relative;
   padding-top: 100%;
   margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
-
 .team_list_image a {
   display: block;
   position: absolute;
@@ -108,65 +98,73 @@ h2.team_list_banner_title {
   right: 0;
   bottom: 0;
 }
-
 .team_list_image a img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
-
 .team_list_desc {
   display: flex;
   flex-direction: column;
-  padding-left: 1em;
-  padding-right: 1em;
 }
-
 .team_list_name {
   display: flex;
   padding: 0;
-  margin-bottom: 1em;
 }
-
 .team_list_name a {
-  display: flex;
   display: inline-block;
+  -webkit-font-smoothing: antialiased;
   font-family: GTAmerica;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.14;
-  letter-spacing: -0.23px;
-  color: #e4dfd4;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.27;
+  letter-spacing: -0.2px;
+  color: #fff;
+  transition: all 0.5s cubic-bezier(0.6, 0.2, 0.15, 0.95);
 }
-
+.team_list_name a:hover {
+  color: #c2b299;
+}
 h3.team_list_designation {
-  display: flex;
   font-family: GTAmerica;
-  font-size: 26px;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.31;
-  letter-spacing: -0.76px;
-  color: #ededed;
-  margin-bottom: 2.25em;
-  -webkit-font-smoothing: antialiased;
-}
-
-.team_list {
-  padding: 1.5rem 0;
+  line-height: 1.75;
+  letter-spacing: -0.3px;
+  color: #dbd4c5;
 }
 
 @media only screen and (min-width: 768px) {
-  .team_list {
-    padding-top: 2em;
+  .team_list_item {
+    width: 50%;
+    margin: 0;
+    padding-bottom: 3em;
+    max-width: unset;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .team_list {
     padding-top: 4em;
+  }
+  .team_list_item {
+    width: 33.33%;
+    padding-bottom: 3em;
+  }
+  .team_list_image {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .team_list_item {
+    padding-bottom: 120px;
   }
 }
