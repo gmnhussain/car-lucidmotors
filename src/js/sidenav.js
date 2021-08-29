@@ -121,22 +121,12 @@ $(".btn_expand").on("click", () => {
 
 */
 
-$(".btn_expand").click(() => {
-  $(this).addClass("name");
-  // if (
-  //   $(this).closest("li").find(".sidenav_expandable_menu").hasClass("expanded")
-  // ) {
-  //   $(this)
-  //     .closest("li")
-  //     .find(".sidenav_expandable_menu")
-  //     .removeClass("expanded");
-  //   //alert(25);
-  //   // tweensExpand.reverse();
-  //   // $(".sidenav_expandable_menu").removeClass("expanded");
-  // } else {
-  //   //alert(23);
-  //   $(this).closest("li").find(".sidenav_expandable_menu").addClass("expanded");
-  //   // tweensExpand.play();
-  //   // $(".sidenav_expandable_menu").addClass("expanded");
-  // }
+$(".btn_expand").on("click", function () {
+  if (
+    $(this).parent().find("~ .sidenav_expandable_menu").hasClass("expanded")
+  ) {
+    $(this).parent().find("~ .sidenav_expandable_menu").removeClass("expanded");
+  } else {
+    $(this).parent().find("~ .sidenav_expandable_menu").addClass("expanded");
+  }
 });

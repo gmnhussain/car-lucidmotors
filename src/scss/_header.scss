@@ -190,6 +190,7 @@ ul.secondary_menu {
 .sidenav {
   padding: 4.0625rem 1.25rem 2.5rem 2.5rem;
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   background: #1b1b1b;
   will-change: transform;
@@ -198,29 +199,31 @@ ul.secondary_menu {
   top: 0;
   z-index: 9999;
   transform: translateX(100%);
-  height: 100%;
   overflow: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .sidenav {
+    max-width: 23.875rem;
+  }
 }
 
 .sidenav_list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem 0 0;
-  margin: 0 0 1.875rem;
+  padding-right: 2rem;
+  margin-bottom: 1.875rem;
 }
 .sidenav_list li {
   flex-shrink: 0;
-  margin: 0 1.875rem 0 0;
+  margin-right: 1.875rem;
 }
 .sidenav_list li a {
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
   -apple-font-smoothing: antialiased;
   font-smooth: always;
   -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: GTAmerica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -236,20 +239,16 @@ ul.secondary_menu {
 }
 
 .sidenav_menu {
-  margin: 0 0 2.1875rem;
+  margin-bottom: 2.1875rem;
 }
 .sidenav_menu li {
-  color: inherit;
 }
-.sidenav_menu li a {
-  font-weight: 400;
+.sidenav_menu li a,
+.sidenav_menu li button {
   -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
   -apple-font-smoothing: antialiased;
   font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: GTAmerica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -258,39 +257,19 @@ ul.secondary_menu {
   line-height: 2.8125rem;
   letter-spacing: 0.01em;
   color: #fff;
+  text-decoration: none;
   transition: color 0.5s;
 }
 .sidenav_menu li button {
   overflow: visible;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
   border: none;
-  background: transparent;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
-  -apple-font-smoothing: antialiased;
-  font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   position: relative;
   width: 100%;
-  font-size: 1.25rem;
-  line-height: 2.8125rem;
-  letter-spacing: 0.01em;
   text-align: left;
-  color: #fff;
-  transition: color 0.5s;
 }
 .sidenav_menu li button span {
-  color: inherit;
 }
 
 .sidenav_menu li button:hover,
@@ -330,14 +309,10 @@ ul.sidenav_expandable_menu.expanded {
 ul.sidenav_expandable_menu li {
 }
 ul.sidenav_expandable_menu li a {
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
   -apple-font-smoothing: antialiased;
   font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: GTAmerica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -391,7 +366,7 @@ ul.sidenav_expandable_menu li a:hover {
 }
 
 ul.sidenav_social {
-  margin: 0 0 2.8125rem;
+  margin-bottom: 2.8125rem;
 }
 ul.sidenav_social li {
   position: relative;
@@ -400,8 +375,6 @@ ul.sidenav_social li {
   width: 2.75rem;
   height: 2.75rem;
   padding: 0.625rem;
-  margin-right: 0.25rem;
-  transition: opacity 0.5s;
 }
 ul.sidenav_social li:first-child {
   margin-left: -0.625rem;
@@ -425,11 +398,5 @@ ul.sidenav_social li a:hover {
   color: #8d8d8d;
 }
 ul.sidenav_social li a i {
-  font-size: 24px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .sidenav {
-    max-width: 22.8125rem;
-  }
+  font-size: 1.125rem;
 }
