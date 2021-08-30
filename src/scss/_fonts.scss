@@ -1,6 +1,12 @@
 /*------- custom fonts -------*/
 @font-face {
   font-family: GTAmerica;
+  src: url("../fonts/Gt-America-Font/GTAmerica-Thin.woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: GTAmerica;
   src: url("../fonts/Gt-America-Font/GTAmerica-Light.woff");
   font-weight: 300;
 }
