@@ -10,30 +10,20 @@
   padding-bottom: 1.75rem;
   background-color: #dbd4c5;
 }
-
 .footer_subscribe_wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1360px;
   margin: 0 auto;
 }
-
 .footer_subscribe_title {
-  width: 50%;
-  padding-right: 25%;
+  width: 100%;
+  padding-right: 0;
 }
-
 .footer_subscribe_title h2 {
-  -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
-  -apple-font-smoothing: antialiased;
-  font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-weight: 300;
+  font-family: GTAmerica, Helvetica;
   font-style: normal;
   font-stretch: normal;
   font-size: 1.625rem;
@@ -44,41 +34,41 @@
 }
 
 .footer_subscribe_form {
-  width: 50%;
+  width: 100%;
+  margin-top: 2.125rem;
 }
-
 .subscribe_field_wrap {
   margin-bottom: 1.7rem;
 }
-
-.subscribe_field_visible {
-  margin-bottom: 1.7rem;
+.subscribe_field_wrap:nth-child(2) {
+  margin-bottom: 0;
 }
-
+.subscribe_field_visible {
+}
 .subscribe_field_hidden {
 }
 
 .subscribe_field {
   margin-bottom: 1.7rem;
+  display: flex;
+  flex-direction: column;
 }
-
+.subscribe_field:last-child {
+  margin-bottom: 0;
+}
 .subscribe_field p {
   display: flex;
-  flex-flow: row;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   padding-bottom: 0.5rem;
   font-family: GTAmerica;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 11px;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: condensed;
   font-style: normal;
   letter-spacing: 2.75px;
-  color: rgb(120, 120, 120);
+  color: #787878;
 }
-
 .subscribe_field input,
 .subscribe_field select {
   font-family: GTAmerica;
@@ -94,26 +84,12 @@
   background-color: rgb(255, 255, 255);
   border: none;
 }
-
 .subscribe_field select {
-  font-family: GTAmerica;
-  width: 100%;
-  height: 64px;
-  appearance: none;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  color: rgb(64, 66, 63);
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  padding: 22px 25px;
-  background-color: rgb(255, 255, 255);
   background-image: url(../img/icon/select-bg-black.svg);
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) center;
 }
-
 .subscribe_field select option {
   font-weight: normal;
   display: block;
@@ -128,7 +104,6 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-
 .subscribe_check {
   display: flex;
   margin: 2.4rem 0px;
@@ -153,7 +128,6 @@
   background-size: 1.5rem 1.5rem;
   background-position: center center;
 }
-
 .subscribe_check span {
   color: rgb(64, 66, 63);
   font-size: 0.9rem;
@@ -172,21 +146,19 @@
   font-stretch: condensed;
   font-style: normal;
   line-height: 1.75;
-  letter-spacing: normal;
+  letter-spacing: 0.125px;
   text-align: center;
   cursor: pointer;
-  padding: 1rem 4.5rem;
+  padding: 1rem 4.2rem;
   transition: all 0.5s ease 0s, background-position 0s ease 0s;
   border: 1px solid transparent;
   background-color: #1b1b1b;
   color: #fff;
   margin-bottom: 2.5rem;
-  font-size: 16px;
   text-transform: none;
-  letter-spacing: 0.125px;
   width: auto;
+  margin-top: 0;
 }
-
 .subscribe_btn:hover {
   background-color: transparent;
   color: #000;
@@ -218,39 +190,39 @@ p.subscribe_policy a:hover {
   padding-bottom: 1.875rem;
   background-color: #ededed;
 }
-
 .footer_bottom_wrapper {
   position: relative;
   width: 100%;
   will-change: transform;
   max-width: 1360px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer_bottom_col {
   margin-bottom: 2.875rem;
   line-height: 1.4rem;
 }
-
+.footer_bottom_col:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
 .footer_social {
   display: flex;
   align-items: center;
 }
-
 .footer_social a {
   position: relative;
   margin: 0 1.75rem 0 0;
   display: inline-block;
   color: #1b1b1b;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
-
 .footer_social a::after {
   bottom: -0.9375rem;
 }
-
 .footer_social a i {
   width: 21px;
   height: 21px;
@@ -263,16 +235,8 @@ p.subscribe_policy a:hover {
   width: 100%;
   justify-content: center;
 }
-
 .footer_bottom_link a {
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
-  -apple-font-smoothing: antialiased;
-  font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: GTAmerica, Helvetica;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -281,23 +245,14 @@ p.subscribe_policy a:hover {
   line-height: normal;
   color: #1b1b1b;
 }
-
 .footer_copyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
-
 .footer_copyright p {
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -khtml-font-smoothing: antialiased;
-  -apple-font-smoothing: antialiased;
-  font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: GTAmerica, Helvetica;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -323,36 +278,49 @@ p.subscribe_policy a:hover {
     padding-top: 6.25rem;
     padding-bottom: 6.5625rem;
   }
-
+  .footer_subscribe_wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer_subscribe_title {
+    width: 50%;
+    padding-right: 25%;
+  }
   .footer_subscribe_title h2 {
     font-size: 2.03125rem;
   }
 
+  .footer_subscribe_form {
+    width: 50%;
+    margin-top: 0;
+  }
+  .subscribe_btn {
+    font-size: 16px;
+    letter-spacing: 0.0125px;
+  }
+
   .footer_bottom {
     padding-top: 6.25rem;
+    padding-top: 5rem;
     padding-bottom: 8.125rem;
     padding-bottom: 5rem;
   }
-
   .footer_bottom_wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
-
   .footer_bottom_col {
     width: 33.33%;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-
   .footer_social a {
     margin: 0 1.875rem 0 0;
   }
-
   .footer_bottom_link a {
     display: inline-block;
     line-height: 1.75rem;
