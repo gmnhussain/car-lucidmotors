@@ -14,7 +14,7 @@ const sections = {
     "./src/footer.html",
   ],
   "blog-detail": [
-    "./src/header.html", //
+    "./src/header-2.html", //
     "./src/blog-detail.html",
     "./src/footer.html",
   ],

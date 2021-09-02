@@ -400,3 +400,35 @@ ul.sidenav_social li a:hover {
 ul.sidenav_social li a i {
   font-size: 1.125rem;
 }
+
+// header 2
+.header_2 {
+}
+.header_2 .header_bg {
+  background-color: rgba(198, 199, 200, 0.85);
+}
+
+.header_2 ul.main_menu li a span.main_menu_label {
+  color: #000;
+  font-weight: 700;
+}
+.header_2 ul.main_menu li a:before {
+  background: #000;
+}
+
+.header_2 .btn_primary {
+  border: 1px solid #000;
+}
+.header_2 .btn_primary .canvas {
+  background-color: #000;
+}
+.header_2 .btn_primary .label {
+  color: #000;
+}
+.header_2 .btn_primary:hover .label {
+  color: #a19fa2;
+}
+
+.header_2 .btn_hamburger span {
+  background: #000;
+}
