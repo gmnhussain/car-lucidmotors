@@ -7,8 +7,9 @@
   padding: 1.25rem 2.5rem;
   min-height: 100vh;
   overflow: hidden;
+  // custom code
+  // margin-top: -30%;
 }
-
 .home_vision_bg {
   position: absolute;
   top: 0;
@@ -16,6 +17,7 @@
   width: 100%;
   height: 100%;
   will-change: transform;
+  z-index: -3;
 }
 
 .home_vision_bg_image {
@@ -47,7 +49,15 @@
   align-items: center;
   flex-direction: column;
   will-change: transform;
+  // custom code
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
+
 .home_vision_text h3 {
   font-weight: 400;
   font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,

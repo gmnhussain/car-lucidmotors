@@ -46,3 +46,15 @@ gsap.to(".company_hero_image", {
     scrub: true,
   },
 });
+
+// home vision section
+// gsap.to(".home_vision_bg", {
+//   y: 500,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".home_vision",
+//     start: "top bottom",
+//     end: "bottom top",
+//     scrub: true,
+//   },
+// });
