@@ -27,3 +27,11 @@ const instagramSlider = new Swiper(".home_instagram_slider", {
     },
   },
 });
+
+// blog list slider
+const blogListSlider = new Swiper(".home_blog_list_slider", {
+  loop: true,
+  // observer: true,
+  // observeParents: true,
+  slidesPerView: 3,
+});
