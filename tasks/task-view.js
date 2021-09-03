@@ -4,34 +4,39 @@ const beautify = require("gulp-beautify");
 
 const sections = {
   index: [
-    "./src/header.html", //
-    "./src/index.html",
-    "./src/footer.html",
+    "./src/views/header.html", //
+    "./src/views/home/banner.html",
+    "./src/views/home/car-slider.html",
+    "./src/views/home/our-vision.html",
+    "./src/views/home/blog-list-slider.html",
+    "./src/views/home/links.html",
+    "./src/views/home/instagram-slider.html",
+    "./src/views/footer.html",
   ],
   "blog-list": [
-    "./src/header.html", //
-    "./src/blog-list.html",
-    "./src/footer.html",
+    "./src/views/header.html", //
+    "./src/views/blog-list.html",
+    "./src/views/footer.html",
   ],
   "blog-detail": [
-    "./src/header-2.html", //
-    "./src/blog-detail.html",
-    "./src/footer.html",
+    "./src/views/header-2.html", //
+    "./src/views/blog-detail.html",
+    "./src/views/footer.html",
   ],
   "team-list": [
-    "./src/header.html", //
-    "./src/team-list.html",
-    "./src/footer.html",
+    "./src/views/header.html", //
+    "./src/views/team-list.html",
+    "./src/views/footer.html",
   ],
   "team-detail": [
-    "./src/header.html", //
-    "./src/team-detail.html",
-    "./src/footer.html",
+    "./src/views/header.html", //
+    "./src/views/team-detail.html",
+    "./src/views/footer.html",
   ],
   company: [
-    "./src/header.html", //
-    "./src/company.html",
-    "./src/footer.html",
+    "./src/views/header.html", //
+    "./src/views/company.html",
+    "./src/views/footer.html",
   ],
 };
 

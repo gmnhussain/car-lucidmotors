@@ -7,7 +7,13 @@
 @use 'header';
 @use 'footer';
 
-@use 'pages/home';
+@use 'pages/home/banner';
+@use 'pages/home/car-slider';
+@use 'pages/home/our-vision';
+@use 'pages/home/blog-list-slider';
+@use 'pages/home/links';
+@use 'pages/home/instagram-slider';
+
 @use 'pages/blog-list';
 @use 'pages/blog-detail';
 @use 'pages/team-list';

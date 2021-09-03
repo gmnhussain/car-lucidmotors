@@ -5,16 +5,13 @@ const beautify = require("gulp-beautify");
 const sourcemaps = require("gulp-sourcemaps");
 
 let js = [
-  "./src/js/onload.js", //
-  "./src/js/onresize.js",
-  "./src/js/onscroll.js",
+  "./src/js/window.js", //
   "./src/js/preloader.js",
   "./src/js/cursor.js",
   "./src/js/scroller.js",
   "./src/js/button.js",
   "./src/js/sidenav.js",
-  "./src/js/modal.js",
-  "./src/js/slider-hero.js",
+  "./src/js/slider.js",
 ];
 
 let jsBeautify = (done) => {
