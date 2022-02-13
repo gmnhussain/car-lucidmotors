@@ -33,7 +33,29 @@ const blogListSlider = new Swiper(".home_blog_list_slider", {
   loop: true,
   // observer: true,
   // observeParents: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
+  pagination: {
+    el: ".home_blog_list_slider_pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".home_blog_list_slider_btn.next",
+    prevEl: ".home_blog_list_slider_btn.prev",
+  },
+  breakpoints: {
+    440: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1800: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
 });
 
 // blog list slider
