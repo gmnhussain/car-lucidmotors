@@ -39,24 +39,25 @@ hamburger.addEventListener("mouseleave", () => {
 });
 
 // button primary
-const btnPrimary = document.querySelector(".btn_primary");
-const btnPrimaryCanvas = document.querySelector(".btn_primary .canvas");
+const btnPrimary = document.querySelectorAll(".btn_primary");
 
-btnPrimary.addEventListener("mouseenter", () => {
-  gsap.to(btnPrimaryCanvas, {
-    scaleX: 1,
-    duration: 0.6,
-    transformOrigin: "right",
-    ease: CustomEaseJorisOut,
+btnPrimary.forEach((btn) => {
+  btn.addEventListener("mouseenter", () => {
+    gsap.to(btn.querySelector(".canvas"), {
+      scaleX: 1,
+      duration: 0.6,
+      transformOrigin: "right",
+      ease: CustomEaseJorisOut,
+    });
   });
-});
 
-btnPrimary.addEventListener("mouseleave", () => {
-  gsap.to(btnPrimaryCanvas, {
-    scaleX: 0,
-    duration: 0.6,
-    transformOrigin: "left",
-    ease: CustomEaseJorisOut,
+  btn.addEventListener("mouseleave", () => {
+    gsap.to(btn.querySelector(".canvas"), {
+      scaleX: 0,
+      duration: 0.6,
+      transformOrigin: "left",
+      ease: CustomEaseJorisOut,
+    });
   });
 });
 

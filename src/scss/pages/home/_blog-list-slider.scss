@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 3.125rem;
+  margin-bottom: calc(3.125rem + 24.8967px);
   width: 100%;
 }
 .home_blog_list_title h2 {
@@ -27,7 +28,7 @@
   line-height: 2.375rem;
   color: #f2f2f2;
 }
-.home_blog_list_title a {
+.home_blog_list_title a.btn_primary {
   -webkit-font-smoothing: antialiased;
   -khtml-font-smoothing: antialiased;
   -apple-font-smoothing: antialiased;
@@ -72,6 +73,7 @@
 }
 
 .home_blog_list_slide {
+  height: 516.31px;
 }
 
 .home_blog_list_slide_wrapper {
@@ -171,7 +173,7 @@ a.home_blog_list_image img {
   width: calc(100% - 120px);
   overflow: hidden;
   position: absolute;
-  bottom: -2.5rem !important;
+  bottom: 0 !important;
   top: auto !important;
   left: 0;
   height: 1px;
@@ -227,6 +229,7 @@ a.home_blog_list_image img {
   position: absolute;
   top: auto;
   bottom: -2.5rem;
+  bottom: 0;
   left: auto;
   z-index: 1;
   transform: translateY(50%);
@@ -259,7 +262,7 @@ a.home_blog_list_image img {
 
 @media only screen and (min-width: 1024px) {
   .home_blog_list {
-    padding: 5.625rem 5.625rem 10px;
+    padding: 5.625rem 5.625rem 3.625rem;
   }
 
   .home_blog_list_title {
@@ -269,8 +272,8 @@ a.home_blog_list_image img {
     line-height: 3.5rem;
     color: #ededed;
   }
-  .home_blog_list_title a {
-    height: 4.0625rem;
+  .home_blog_list_title a.btn_primary {
+    height: 4.0625rem !important;
     line-height: 4.0625rem;
     -webkit-font-smoothing: antialiased;
     -khtml-font-smoothing: antialiased;
@@ -282,7 +285,9 @@ a.home_blog_list_image img {
     font-weight: 400;
     font-style: normal;
     font-stretch: condensed;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .home_blog_list_slider {
@@ -304,6 +309,7 @@ a.home_blog_list_image img {
 
   a.home_blog_list_image {
     transform: translate3d(0px, 24.8967px, 0px);
+    transform: translate3d(0, 0, 0);
   }
   a.home_blog_list_image img {
   }
@@ -314,5 +320,9 @@ a.home_blog_list_image img {
   }
 
   .home_blog_list_slider_pagination_wrap {
+    bottom: -3.4375rem !important;
+  }
+  .home_blog_list_slider_btn {
+    bottom: -3.4375rem;
   }
 }
