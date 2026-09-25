@@ -1,0 +1,328 @@
+// footer
+.footer {
+  width: 100%;
+}
+
+// footer subscribe
+.footer_subscribe {
+  width: 100%;
+  padding-top: 3.375rem;
+  padding-bottom: 1.75rem;
+  background-color: #dbd4c5;
+}
+.footer_subscribe_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.footer_subscribe_title {
+  width: 100%;
+  padding-right: 0;
+}
+.footer_subscribe_title h2 {
+  font-family: GTAmerica, Helvetica;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 1.625rem;
+  font-weight: 400;
+  letter-spacing: -0.00469rem;
+  line-height: 2.625rem;
+  color: #000;
+}
+
+.footer_subscribe_form {
+  width: 100%;
+  margin-top: 2.125rem;
+}
+.subscribe_field_wrap {
+  margin-bottom: 1.7rem;
+}
+.subscribe_field_wrap:nth-child(2) {
+  margin-bottom: 0;
+}
+.subscribe_field_visible {
+}
+.subscribe_field_hidden {
+}
+
+.subscribe_field {
+  margin-bottom: 1.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe_field:last-child {
+  margin-bottom: 0;
+}
+.subscribe_field p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  font-family: GTAmerica;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  font-stretch: condensed;
+  font-style: normal;
+  letter-spacing: 2.75px;
+  color: #787878;
+}
+.subscribe_field input,
+.subscribe_field select {
+  font-family: GTAmerica;
+  width: 100%;
+  height: 64px;
+  appearance: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+  border-radius: 0px;
+  padding: 22px 25px;
+  color: rgb(64, 66, 63);
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.subscribe_field select {
+  background-image: url(../img/icon/select-bg-black.svg);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1em) center;
+}
+.subscribe_field select option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.subscribe_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.subscribe_check {
+  display: flex;
+  margin: 2.4rem 0px;
+}
+.subscribe_check input {
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  appearance: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+  border-radius: 0px;
+  color: rgb(64, 66, 63);
+  border: 1px solid rgb(120, 120, 120);
+  margin-right: 1em;
+}
+.subscribe_check input:checked {
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/icon/checked.svg);
+  background-size: 1.5rem 1.5rem;
+  background-position: center center;
+}
+.subscribe_check span {
+  color: rgb(64, 66, 63);
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  padding: 0px;
+}
+
+.subscribe_btn {
+  appearance: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: 0.125px;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 4.2rem;
+  transition: all 0.5s ease 0s, background-position 0s ease 0s;
+  border: 1px solid transparent;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  text-transform: none;
+  width: auto;
+  margin-top: 0;
+}
+.subscribe_btn:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+p.subscribe_policy {
+  color: rgb(64, 66, 63);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  margin: 40px 0px 0px;
+}
+p.subscribe_policy a {
+  color: inherit;
+  text-decoration: underline;
+}
+p.subscribe_policy a:hover {
+  text-decoration: none;
+}
+
+// footer bottom
+.footer_bottom {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 1.875rem;
+  background-color: #ededed;
+}
+.footer_bottom_wrapper {
+  position: relative;
+  width: 100%;
+  will-change: transform;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer_bottom_col {
+  margin-bottom: 2.875rem;
+  line-height: 1.4rem;
+}
+.footer_bottom_col:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
+.footer_social {
+  display: flex;
+  align-items: center;
+}
+.footer_social a {
+  position: relative;
+  margin: 0 1.75rem 0 0;
+  display: inline-block;
+  color: #1b1b1b;
+  user-select: none;
+}
+.footer_social a::after {
+  bottom: -0.9375rem;
+}
+.footer_social a i {
+  width: 21px;
+  height: 21px;
+  color: #1b1b1b;
+}
+
+.footer_bottom_link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.footer_bottom_link a {
+  font-family: GTAmerica, Helvetica;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
+  line-height: normal;
+  color: #1b1b1b;
+}
+.footer_copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.footer_copyright p {
+  font-family: GTAmerica, Helvetica;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #40423f;
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
+  line-height: normal;
+}
+.footer_copyright p a {
+  cursor: pointer;
+}
+
+// responsive
+@media only screen and (min-width: 768px) {
+  .subscribe_field input,
+  .subscribe_field select {
+    font-size: 17.5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer_subscribe {
+    padding-top: 6.25rem;
+    padding-bottom: 6.5625rem;
+  }
+  .footer_subscribe_wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer_subscribe_title {
+    width: 50%;
+    padding-right: 25%;
+  }
+  .footer_subscribe_title h2 {
+    font-size: 2.03125rem;
+  }
+
+  .footer_subscribe_form {
+    width: 50%;
+    margin-top: 0;
+  }
+  .subscribe_btn {
+    font-size: 16px;
+    letter-spacing: 0.0125px;
+  }
+
+  .footer_bottom {
+    padding-top: 6.25rem;
+    padding-top: 5rem;
+    padding-bottom: 8.125rem;
+    padding-bottom: 5rem;
+  }
+  .footer_bottom_wrapper {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer_bottom_col {
+    width: 33.33%;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer_social a {
+    margin: 0 1.875rem 0 0;
+  }
+  .footer_bottom_link a {
+    display: inline-block;
+    line-height: 1.75rem;
+  }
+}
